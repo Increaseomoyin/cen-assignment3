@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>shopping cart</title>
+    <link rel="stylesheet" href="CEN414.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script  src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+   
+</head>
+<body>
+    <section class="yes">
+    <section class="header">
+    <nav>
+        <a href="practice.html"><img src="logo.png"></a>
+        
+        <i class="fa fa-bars"   onclick="showMenu()" style="font-size:29px; color:red;"></i>     
+        
+        <div class="nav-links" id="navLinks">
+         
+           
+         
+       
+            <i class="fa fa-times"  onclick="hideMenu()" style="font-size:29px; color:red;"></i>
+        
+           <ul>
+               <li><a href="project.html">HOME</a></li>
+             
+               <li><a href="#about">CONTACT US</a></li>
+               <li><a href="#campus">FAVORITES</a></li>
+               <li><a href="#contact">CART</a></li>
+               
+           </ul>
+     
+        </div>
+     
+       </nav>
+       <div class="text-box">
+        <h1>SHOPPING SPREE!
+    
+        </h1>
+        <p style="font-size:30px;">We sell cheap and affordable APPLE devices here<br> </p>
+        
+       <a href="#heading1" class="hero-btn">Click here to start purchases</a>
+    </br>
+</br>
+</br>
+</br>
+</br>
+</br>
+      <marquee style="font-size:20px;">Buy whatever you want at a reduced and discounted price.</marquee>
+      </div>
+
+    </section>
+<div class="sub">
+    <div id="heading1">
+        <h1>Shopping Cart</h1>
+    </div>
+    <div class="cart">
+        <i style="visibility: visible;font-size:80px;" class="fa fa-shopping-basket fa-2x" style="font-size:80px"></i>
+  <i  style="visibility: visible;"  class="fa fa-caret-down"></i><br>
+        <div class="total-text">
+            <p style="font-size:30px">Items</p>
+            <p style="font-size:30px" id="items-basket"></p>
+        </div>
+    </div>
+
+    <div id="cart-items">
+        <ol id="list-item">
+        </ol>
+
+        <div class="total-text">
+                <p style="font-size:30px" >Total: </p>
+                <p style="font-size:30px" id="total-price"></p>
+        </div>
+    </div>
+
+
+
+</div>
+
+<div class="items-container">
+    <!-- Item 1 -->
+    <div class="item">
+        <div class="no">
+        <img src="iphone14.jpg">
+        <div class="overflow">
+            <i  style="visibility: visible;" class="fa fa-cart-plus fa-5x" id="basket"></i>
+        </div>
+        <div class="item-detail">
+            <h4>APPLE IPHONE 14</h4>
+            <div class="prices">
+                <del>1200</del>
+                <p class="price">999</p>
+                <p>$</p>
+            </div>
+        </div>
+    </div>
+            <div class="text">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde, ab quod. Velit, beatae, excepturi quisquam nesciunt minima eligendi rem corporis doloremque dignissimos sunt architecto. Consectetur, nihil impedit. Eveniet, praesentium dolores!
+          
+           
+        </div>
+    </div>
+
+    <!-- Item 2 -->
+    <div class="item">
+        <div class="no">
+        <img src="ipad mini.jpg">
+        <div class="overflow">
+            <i style="visibility: visible;"  class="fa fa-cart-plus fa-5x"></i>
+        </div>
+        <div class="item-detail">
+            <h4>APPLE IPAD MINI 6</h4>
+            <div class="prices">
+                <del>900</del>
+                <p class="price">789</p>
+                <p>$</p>
+            </div>
+        </div>
+    </div>
+    <div class="text">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde, ab quod. Velit, beatae, excepturi quisquam nesciunt minima eligendi rem corporis doloremque dignissimos sunt architecto. Consectetur, nihil impedit. Eveniet, praesentium dolores!
+  
+   
+</div>
+    </div>
+
+    <!-- Item 3 -->
+    <div class="item">
+        <div class="no">
+        <img src="ipad pro.jpg">
+        <div class="overflow">
+            <i  style="visibility: visible;" class="fa fa-cart-plus fa-5x"></i>
+        </div>
+        <div class="item-detail">
+            <h4>APPLE IPAD PRO</h4>
+            <div class="prices">
+                <del>1500</del>
+                <p class="price">1299</p>
+                <p>$</p>
+            </div>
+        </div>
+    </div>
+    <div class="text">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde, ab quod. Velit, beatae, excepturi quisquam nesciunt minima eligendi rem corporis doloremque dignissimos sunt architecto. Consectetur, nihil impedit. Eveniet, praesentium dolores!
+  
+   
+</div>
+    </div>
+
+    <!-- Item 4 -->
+    <div class="item">
+        <div class="no">
+        <img src="macbook.jpg">
+        <div class="overflow">
+            <i  style="visibility: visible;" class="fa fa-cart-plus fa-5x"></i>
+        </div>
+        <div class="item-detail">
+            <h4>APPLE MACBOOK PRO</h4>
+            <div class="prices">
+                <del>2200</del>
+                <p class="price">2000</p>
+                <p>$</p>
+            </div>
+        </div>
+    </div>
+    <div class="text">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde, ab quod. Velit, beatae, excepturi quisquam nesciunt minima eligendi rem corporis doloremque dignissimos sunt architecto. Consectetur, nihil impedit. Eveniet, praesentium dolores!
+  
+   
+</div>
+    </div>
+
+    <!-- Item 5 -->
+    <div class="item">
+        <div class="no">
+        <img src="airpods pro 2.jpg">
+        <div class="overflow">
+            <i style="visibility: visible;"  class="fa fa-cart-plus fa-5x"></i>
+        </div>
+        <div class="item-detail">
+            <h4>APPLE AIRPODS PRO 2</h4>
+            <div class="prices">
+                <del>80</del>
+                <p class="price">59</p>
+                <p>$</p>
+            </div>
+        </div>
+    </div>
+    <div class="text">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde, ab quod. Velit, beatae, excepturi quisquam nesciunt minima eligendi rem corporis doloremque dignissimos sunt architecto. Consectetur, nihil impedit. Eveniet, praesentium dolores!
+  
+   
+</div>
+    </div>
+
+    <!-- Item 6 -->
+    <div class="item">
+        <div class="no">
+        <img src="series 6.jpg">
+        <div class="overflow">
+            <i style="visibility: visible;"  class="fa fa-cart-plus fa-5x"></i>
+        </div>
+        <div class="item-detail">
+            <h4>APPLE WATCH SERIES 6</h4>
+            <div class="prices">
+                <del>190</del>
+                <p class="price">149</p>
+                <p>$</p>
+            </div>
+        </div>
+    </div>
+    <div class="text">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde, ab quod. Velit, beatae, excepturi quisquam nesciunt minima eligendi rem corporis doloremque dignissimos sunt architecto. Consectetur, nihil impedit. Eveniet, praesentium dolores!
+  
+   
+</div>
+    </div>
+
+<!-- Item 7-->
+<div class="item">
+    <div class="no">
+    <img src="airtags.jpg">
+    <div class="overflow">
+        <i style="visibility: visible;"  class="fa fa-cart-plus fa-5x"></i>
+    </div>
+    <div class="item-detail">
+        <h4>APPLE AIRTAG</h4>
+        <div class="prices">
+            <del>10</del>
+            <p class="price">5</p>
+            <p>$</p>
+        </div>
+    </div>
+</div>
+<div class="text">
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde, ab quod. Velit, beatae, excepturi quisquam nesciunt minima eligendi rem corporis doloremque dignissimos sunt architecto. Consectetur, nihil impedit. Eveniet, praesentium dolores!
+
+
+</div>
+</div>
+<!-- Item 8 -->
+<div class="item">
+    <div class="no">
+    <img src="airpods max.jpg">
+    <div class="overflow">
+        <i style="visibility: visible;"  class="fa fa-cart-plus fa-5x"></i>
+    </div>
+    <div class="item-detail">
+        <h4>APPLE AIRPODS MAX</h4>
+        <div class="prices">
+            <del>380</del>
+            <p class="price">359</p>
+            <p>$</p>
+        </div>
+    </div>
+</div>
+<div class="text">
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde, ab quod. Velit, beatae, excepturi quisquam nesciunt minima eligendi rem corporis doloremque dignissimos sunt architecto. Consectetur, nihil impedit. Eveniet, praesentium dolores!
+
+
+</div>
+</div>
+<!-- Item 9 -->
+<div class="item">
+    <div class="no">
+    <img src="homepod.jpg">
+    <div class="overflow">
+        <i  style="visibility: visible;" class="fa fa-cart-plus fa-5x"></i>
+    </div>
+    <div class="item-detail">
+        <h4>APPLE HOMEPOD</h4>
+        <div class="prices">
+            <del>400</del>
+            <p class="price">379</p>
+            <p>$</p>
+        </div>
+    </div>
+</div>
+<div class="text">
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde, ab quod. Velit, beatae, excepturi quisquam nesciunt minima eligendi rem corporis doloremque dignissimos sunt architecto. Consectetur, nihil impedit. Eveniet, praesentium dolores!
+
+
+</div>
+</div>
+<!-- Item 10 -->
+<div class="item">
+    <div class="no">
+    <img src="magic mouse.jpg">
+    <div class="overflow">
+        <i  style="visibility: visible;"  class="fa fa-cart-plus fa-5x"></i>
+    </div>
+    <div class="item-detail">
+        <h4>APPLE MAGIC MOUSE</h4>
+        <div class="prices">
+            <del>190</del>
+            <p class="price">179</p>
+            <p>$</p>
+            
+        </div>
+    </div>
+</div>
+<div class="text">
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde, ab quod. Velit, beatae, excepturi quisquam nesciunt minima eligendi rem corporis doloremque dignissimos sunt architecto. Consectetur, nihil impedit. Eveniet, praesentium dolores!
+
+
+</div>
+</div>
+</div>
+    </section>
+    <section class="footer">
+        <h4 id="about">About Us</h4>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+          Lorem ipsum dolor sit, amet<br> consectetur adipisicing elit.
+          Lorem ipsum do</p>
+          <div class="icons">
+            <i class="fa fa-facebook-square" style="color:rgb(27, 27, 141);" ></i>
+            <i class="fa fa-twitter-square"style="color:rgb(27, 27, 141);" ></i>
+            <i class="fa fa-snapchat-square" style="color:yellow;"></i>
+            <i class="fa fa-linkedin-square" ></i>
+            <i class="fa fa-phone-square" style="color:rgb(27, 27, 141);" ></i>
+            <i class="fa fa-instagram" ></i>
+          </div>
+          <h5>copy right &copy; 2023,by Increase</h5>
+      </section>
+      
+<script src="CEN414.js"></script>
+</body>
+</html>
